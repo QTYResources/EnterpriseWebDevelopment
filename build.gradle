@@ -1,0 +1,14 @@
+task wrap(type: Wrapper) {
+    gradleVersion = '1.10'
+}
+
+subprojects{
+    apply plugin: 'war'
+
+    war{
+        from '.'
+        exclude 'build*'
+        exclude '.gradle'
+        exclude 'gradle*'
+    }
+}

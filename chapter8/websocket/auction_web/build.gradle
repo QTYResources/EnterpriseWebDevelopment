@@ -1,0 +1,24 @@
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+
+    maven {
+        name "Glassfish promoted"
+        url "https://maven.java.net/content/groups/promoted/"
+    }
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    providedCompile 'javax:javaee-api:7.0'
+    compile "com.google.code.gson:gson:2.2.2"
+}

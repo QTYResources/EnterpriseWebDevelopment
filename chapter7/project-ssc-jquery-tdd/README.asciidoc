@@ -1,0 +1,8 @@
+== Local installation
+
+- get and install node + npm from http://nodejs.org/download/[Official website]
+- add `node` and `npm` into `PATH` environment variable
+- install Grunt CLI - `npm install -g grunt-cli`
+- install dependencies `npm install`
+- to run everything (jshint, qunit) use command `grunt all` or `grunt all --force`
+- to run specific examples (particular Gruntfile) use `grunt --gruntfile Gruntfile_jasmine.coffee jasmine` or `grunt --gruntfile Gruntfile_karma.coffee karma`
